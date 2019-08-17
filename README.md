@@ -1,3 +1,14 @@
+# react-json-binding
+
+## Installation
+
+Clone the repo and `cd react-json-binding`. `npm install` to add the node modules, then `npm start`
+to view the app on `localhost:3000`. `npm run build` will place a deployable payload
+in the `./build` directory.
+
+
+# React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

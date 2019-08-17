@@ -20,7 +20,7 @@ class GetLocalData extends Component {
         return(
             <div>
                 <div>
-                    <label class="inline-input" for="showStock">Show Stock</label>
+                    <label className="inline-input" htmlFor="showStock">Show Stock</label>
                     <input
                         id="showStock"
                         type="checkbox"
@@ -29,16 +29,16 @@ class GetLocalData extends Component {
                 </div>
                 <h1>{data.label}</h1>
                     {
-                        data.row.map(row => (
-                            <div class="row">
+                        data.row.map((row, index) => (
+                            <div className="row" key={index}>
                             {
                                 row.locations.map(location => (
-                                    <div class="location">
+                                    <div className="location" key={location.name}>
                                         <h3>{location.name}</h3>
                                         <div className={stockClass}>
                                         {
-                                            location.stock.map(item => (
-                                                <div class="item">
+                                            location.stock.map((item, index) => (
+                                                <div className="item" key={index}>
                                                     {item.product} x{item.qty} ({item.replenishment})
                                                 </div>
                                             ))
